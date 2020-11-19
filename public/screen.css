@@ -57,11 +57,35 @@ nav {
   align-items: center;
 }
 
-nav>ul {
+nav ul {
   display: flex;
+  justify-content: space-between;
   list-style: none;
+  border: 1px solid red;
+  padding: 0;
+  margin: 0;
 }
 
 nav li {
   padding: 1rem;
+  margin: 0
+}
+
+/* .btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+} */
+
+.options {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.button {
+  margin-bottom: 3rem;
 }
