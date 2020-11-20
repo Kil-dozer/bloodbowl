@@ -12,12 +12,13 @@ body {
   min-height: 100%;
   text-align: center;
   background-color: olivedrab;
+  /* overflow-x: hidden; */
 }
 
 h1 {
   background-color: slategrey;
-padding: 1rem;
-margin: 0rem;  }
+  padding: 1rem;
+  margin: 0rem;  }
 
 .hero {
   background-image: url('./images/gameplay.jpg');
@@ -131,28 +132,36 @@ display: contents;
 }
 
 @media screen and (max-width: 880px){
+  body {
+    overflow-x: hidden;
+  }
   .burger{
     display: block;
+    cursor: pointer;
   }
-  /* .burger div {
-    display: inline;
-    width: 25px;
-    height: 3px;
-    background-color: whitesmoke;
-    margin: 5px;
-  }
-   */
+
   .nav-links {
     display: none;
     /* Clickables, for later */
 
 
-    /* position: absolute;
+    position: absolute;
     right: 0px;
     height: 92vh;
-    top: 23vh;
+    top: 65vh;
     display: flex;
-    flex-direction: column; */
+    flex-direction: column;
+    background-color:lightblue;
+    width: 35%;
+    transform: translateX(100%);
+    /* transition: transform 0.5s ease-in; */
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
   }
 }
 
