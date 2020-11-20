@@ -12,22 +12,27 @@
     <h1 class="hello-world">Blood Bowl Mania!</h1>
     <section class="nav">
     <nav>
-      <h2>Simple Navbar</h2>
-      <ul>
+      <div class="logo">
+
+        <h2>Simple Navbar</h2>
+      </div>
+      <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Gallery</a></li>
-        <li><a href="#">Historical</a></li>
-        <li><a href="#">Fiction</a></li>
-        <li><a href="#">RPGs</a></li>
+        <div class=game-umbrella>
+          <li><a href="#">Gaming</a></li>
+        </div>
+        <li class=game-child><a href="#">Historical</a></li>
+        <li class=game-child><a href="#">Fiction</a></li>
+        <li class=game-child><a href="#">RPGs</a></li>
       </ul>
       <!-- Burger for mobile viewing only -->
       <div class="burger">
         <div burger="line1"></div>
         <div burger="line2"></div>
         <div burger="line3"></div>
-
       </div>
     </nav>
     </section>
@@ -46,10 +51,6 @@
       <button>
         <Link to="/view/all">blog</Link>
       </button>
-      <!-- <p>Report a suspected sinkhole?</p>
-      <button>
-        <Link to="/add">Add</Link>
-      </button> -->
       <p>FAQ</p>
       <button>
         <Link to="/faq">Learn!</Link>

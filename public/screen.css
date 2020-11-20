@@ -1,5 +1,6 @@
 :root {
   font: 16px / 1 sans-serif;
+  box-sizing: border-box;
 }
 
 html {
@@ -48,12 +49,12 @@ margin: 0rem;  }
 }
 
 nav {
+  display: flex;
+  justify-content: space-around;
   color: whitesmoke;
   background-color: lightblue;
   margin: 0;
   padding: 1rem;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
   }
 
@@ -61,19 +62,28 @@ nav {
     letter-spacing: 5px;
   }
 
-nav ul {
+.nav-links {
   display: flex;
-  justify-content: space-between;
-  width: 40%;
+  justify-content: space-around;
+  width: 50%;
   list-style: none;
   border: 1px solid red;
   padding: 0;
   margin: 0;
 }
 
+.nav-links a {
+  color: whitesmoke;
+  letter-spacing: 2px;
+}
+
 nav li {
   padding: 1rem;
   margin: 0;
+}
+
+.game-umbrella {
+  display: none;
 }
 
 /* Burger for mobile */
@@ -107,6 +117,31 @@ nav li {
 
 .button {
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1260px)
+{
+
+.game-umbrella {
+display: contents;
+}
+.game-child {
+  display: none;
+}
+}
+
+@media screen and (max-width: 880px){
+  .burger{
+    display: contents;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 23vh;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* @media screen and (max-width: 768px) {
