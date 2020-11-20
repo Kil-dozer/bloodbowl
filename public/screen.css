@@ -1,6 +1,6 @@
 :root {
   font: 16px / 1 sans-serif;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 html {
@@ -132,15 +132,27 @@ display: contents;
 
 @media screen and (max-width: 880px){
   .burger{
-    display: contents;
+    display: block;
   }
+  /* .burger div {
+    display: inline;
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px;
+  }
+   */
   .nav-links {
-    position: absolute;
+    display: none;
+    /* Clickables, for later */
+
+
+    /* position: absolute;
     right: 0px;
     height: 92vh;
     top: 23vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
   }
 }
 
