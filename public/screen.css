@@ -135,13 +135,10 @@ display: contents;
   body {
     overflow-x: hidden;
   }
-  .burger{
-    display: block;
-    cursor: pointer;
-  }
+
 
   .nav-links {
-    display: none;
+    /* display: none; */
     /* Clickables, for later */
 
 
@@ -151,18 +148,25 @@ display: contents;
     top: 65vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color:lightblue;
     width: 35%;
     transform: translateX(100%);
-    /* transition: transform 0.5s ease-in; */
+    transition: transform 0.5s ease-in;
   }
   .nav-links li {
     opacity: 0;
+  }
+  .burger{
+    display: block;
+    cursor: pointer;
   }
 
   .nav-active {
     transform: translateX(0%);
   }
+
+  
 }
 
 /* @media screen and (max-width: 768px) {
